@@ -1,0 +1,90 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures both sections are of equal height */
+}
+
+.table-section {
+    width: calc(50% - 1px); /* Adjusted width to account for the vertical line */
+    padding: 20px;
+    border-right: 1px solid #ccc; /* Vertical line */
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: #ccc;
+}
+
+.pie-chart-section {
+    width: 50%;
+    padding: 20px;
+}
+/* Adjust the table to take up 100% width */
+.table-section table {
+    width: 100%;
+}
+
+/* Make the "Reason" column fill half of the width */
+.table-section th:nth-child(1),
+.table-section td:nth-child(1) {
+    width: 50%;
+}
+
+/* Make the "Amount" column fill the other half of the width */
+.table-section th:nth-child(2),
+.table-section td:nth-child(2) {
+    width: 50%;
+}
+/* Adjust the table to take up 100% width */
+.table-section table {
+    width: 100%;
+    border-collapse: collapse; /* For better alignment */
+}
+
+/* Make the "Reason" column fill half of the width */
+.table-section th:nth-child(1),
+.table-section td:nth-child(1) {
+    width: 50%;
+    text-align: center; /* Center-align the text */
+}
+
+/* Make the "Amount" column fill the other half of the width */
+.table-section th:nth-child(2),
+.table-section td:nth-child(2) {
+    width: 50%;
+    text-align: center; /* Center-align the text */
+}
+/* Adjust the table section to use flexbox */
+.table-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items horizontally */
+}
+
+/* Style for the button */
+#add-expense-btn {
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+

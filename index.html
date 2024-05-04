@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include CSS for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner Section -->
+    <div class="banner">
+        <h1>Expense Tracker</h1>
+        <div class="profile-icon"></div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Table Section -->
+<div class="table-section">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Reason</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample expenses -->
+            <tr>
+                <td>Groceries</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Utilities</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Entertainment</td>
+                <td>$30</td>
+            </tr>
+        </tbody>
+    </table>
+        <div id="addBu">
+        <button id="add-expense-btn">Add Expense</button>
+    </div>
+</div>
+
+        <!-- Vertical Line -->
+        <div class="vertical-line"></div>
+        
+        <!-- Pie Chart Section -->
+        <div class="pie-chart-section">
+            <canvas id="pie-chart"></canvas>
+        </div>
+    </div>
+
+    <!-- Include external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
